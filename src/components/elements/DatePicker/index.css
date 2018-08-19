@@ -138,3 +138,12 @@
     padding:20px;
     width:50%;
  }
+
+ .confirm-selection{
+   padding:5px;
+   background:#e74c3c;
+   color:#fff;
+   margin-top:5px;
+   width:100%;
+   border:none;
+ }
