@@ -1,18 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment} from 'react';
+import {InputField, DatePicker} from './components/elements';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="App"style={{margin:"30px"}}>
+      <h2>Component ShowCase</h2>
+        <Fragment style={{margin:"30px"}}>
+         
+          <DatePicker 
+            label="Select Date: "
+            format="DD/MM/YYYY H:m"  
+            type="datetime"  
+            value="03/02/1989 14:30" 
+            onSelect={(date) => {console.log("OUT", date)}}
+          />
+          <DatePicker 
+            label="Select Date: "
+            outFormat="yyyy-mm-dd"  
+            type="date"   
+          />
+        </Fragment>
       </div>
     );
   }
