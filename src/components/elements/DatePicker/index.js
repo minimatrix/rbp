@@ -116,7 +116,7 @@ export default class Calendar extends Component {
     confirmSelection(){
       console.log(this.state.time)
         let arr = this.state.time.split (":");
-        let date = this.state.selectedDate.set({HH: arr[0], mm: arr[1]});
+        let date = this.state.selectedDate.set({H: arr[0], m: arr[1]});
         
         if(this.props.onSelect !== undefined)
           this.props.onSelect(date)
@@ -124,6 +124,7 @@ export default class Calendar extends Component {
         this.setState({ 
           date_field:  date.format(this.state.format),
           selectedDate: date,
+          display: 'none'
         });
 
 
