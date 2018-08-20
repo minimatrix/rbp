@@ -10,7 +10,7 @@ class App extends Component {
         <Fragment style={{margin:"30px"}}>
          
           <DatePicker 
-            label="Select Date: "
+            label="Select Date/Time: "
             format="DD/MM/YYYY H:m"  
             type="datetime"  
             value="03/02/1989 14:30" 
